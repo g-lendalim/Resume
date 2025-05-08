@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Card, ListGroup, Badge } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import ProfilePicture from "../images/profile-picture.jpg"
 
 function ProfessionalProfile() {
   return (
@@ -22,8 +23,8 @@ function ProfileCard() {
       <Card.Body>
         <div className="overflow-hidden rounded-circle mx-auto mb-3" style={{ width: '200px', height: '200px' }}>
           <Card.Img 
-            variant="top" 
-            src="images/profile-picture.jpg" 
+            variant="top"
+            src={ProfilePicture} 
             className="img-fluid" 
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
           />
