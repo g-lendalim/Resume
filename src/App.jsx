@@ -11,7 +11,7 @@ function ProfessionalProfile() {
         Professional Profile
       </h4>
       <p className="lead">
-        Completed a 12-week intensive program with 25+ projects, covering HTML5, CSS3, JavaScript, React.js, Redux, Node.js, Express.js, SQL, Firebase, and Firestore. Gained hands-on experience in frontend and backend development, RESTful API integration, and CI/CD workflows.
+      Junior Developer with a clinical background, proficient in React, Node.js, Firebase, and PostgreSQL. Driven to deliver intuitive, high-performance web applications using modern development practices. Fast learner and collaborative teammate, passionate about leveraging technology to solve real-world challenges across industries.
       </p>
     </section>
   );
