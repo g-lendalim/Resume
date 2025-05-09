@@ -233,7 +233,7 @@ function EducationList() {
       <Education
         degree="Doctor of Medicine in General Medicine"
         institution="I.M. Sechenov First Moscow State Medical University"
-        duration="September 2014 - June 2022"
+        duration="September 2014 - June 2020"
         details="Graduated with Blue Diploma"
       />
     </section>
