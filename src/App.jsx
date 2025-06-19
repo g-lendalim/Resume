@@ -2,7 +2,6 @@ import React from 'react';
 import { Container, Row, Col, Card, ListGroup, Badge } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import ProfilePicture from "../images/profile-picture.jpg"
 
 function ProfessionalProfile() {
   return (
@@ -11,7 +10,7 @@ function ProfessionalProfile() {
         Professional Profile
       </h4>
       <p className="lead">
-      Junior Developer with a clinical background, proficient in React, Node.js, Firebase, and PostgreSQL. Driven to deliver intuitive, high-performance web applications using modern development practices. Fast learner and collaborative teammate, passionate about leveraging technology to solve real-world challenges across industries.
+        Completed a 12-week intensive program with 25+ projects, covering HTML5, CSS3, JavaScript, React.js, Redux, Node.js, Express.js, SQL, Firebase, and Firestore. Gained hands-on experience in frontend and backend development, RESTful API integration, and CI/CD workflows.
       </p>
     </section>
   );
@@ -23,8 +22,8 @@ function ProfileCard() {
       <Card.Body>
         <div className="overflow-hidden rounded-circle mx-auto mb-3" style={{ width: '200px', height: '200px' }}>
           <Card.Img 
-            variant="top"
-            src={ProfilePicture} 
+            variant="top" 
+            src="images/profile-picture.jpg" 
             className="img-fluid" 
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
           />
@@ -79,7 +78,8 @@ function TechnicalSkills() {
   const skillCategories = [
     {
       category: "Frontend Development",
-      skills: ["React.js", "HTML5/CSS3", "Bootstrap", "JavaScript (ES6+)", "Responsive Design"]
+      skills: ["React.js", "HTML5/CSS3", "Bootstrap", "JavaScript (ES6+)", "Responsive Design", "React Helmet", 
+      "Semantic HTML"]
     },
     {
       category: "Backend Development",
@@ -90,8 +90,19 @@ function TechnicalSkills() {
       skills: ["PostgreSQL", "MongoDB", "Firebase/Firestore", "SQL"]
     },
     {
+      category: "SEO & Analytics",
+      skills: [
+        "SEO Optimization", 
+        "Structured Data (JSON-LD)", 
+        "Google Search Console", 
+        "Google Analytics"
+      ]
+    },
+    {
       category: "DevOps & Tools",
-      skills: ["Git/GitHub", "CI/CD Pipelines"]
+      skills: ["Git/GitHub", "CI/CD Pipelines", "Vite", 
+      "Vercel", 
+      "Chrome DevTools"]
     }
   ];
 
@@ -233,7 +244,7 @@ function EducationList() {
       <Education
         degree="Doctor of Medicine in General Medicine"
         institution="I.M. Sechenov First Moscow State Medical University"
-        duration="September 2014 - June 2020"
+        duration="September 2014 - June 2022"
         details="Graduated with Blue Diploma"
       />
     </section>
@@ -246,8 +257,8 @@ function TechProjects({ name, liveUrl, backendUrl, summary, features, technologi
       <Card.Body>
         <Card.Title className="fs-5 fw-bold">{name}</Card.Title>
         <div className="mb-2">
-          <a href={liveUrl} className="btn btn-sm btn-outline-primary me-2">Live Demo</a>
-          <a href={backendUrl} className="btn btn-sm btn-outline-secondary">Backend Repo</a>
+          <a href={liveUrl} className="btn btn-sm btn-outline-primary me-2">Live URL</a>
+          {backendUrl && <a href={backendUrl} className="btn btn-sm btn-outline-secondary">Backend Repo</a>}
         </div>
         
         <div className="mb-3">
@@ -275,6 +286,26 @@ function TechProjectsList() {
   return (
     <section className="mt-5">
       <h4 className="fs-4 fw-bold border-bottom pb-2 mb-4 text-primary">Featured Tech Projects</h4>
+      <TechProjects
+        name="Sun Sierra – Corporate Website"
+        liveUrl="https://www.sunsierra.com.my" 
+        summary="Designed and developed a responsive, SEO-optimized corporate website for Sun Sierra, a Malaysian company specializing in building maintenance."
+        technologies={[
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "React",
+          "SEO Optimization",
+          "Google Analytics",
+          "Responsive Design"
+        ]}
+        features={[
+          "Built the website from scratch using modern web standards, with mobile-first responsive layout.",
+          "Applied SEO best practices including semantic HTML, meta tags, and structured data (JSON-LD).",
+          "Integrated Google Analytics and Search Console to enable performance tracking and SEO insights.",
+          "Collaborated directly with the client to ensure brand consistency, content clarity, and visual appeal across pages."
+        ]}
+      />
       <TechProjects
         name="Safe Space - Mental Health Web Application"
         liveUrl="https://capstone-project-vert-eight.vercel.app"
