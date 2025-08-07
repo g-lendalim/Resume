@@ -258,7 +258,7 @@ function TechProjects({ name, liveUrl, backendUrl, summary, features, technologi
         <Card.Title className="fs-5 fw-bold">{name}</Card.Title>
         <div className="mb-2">
           <a href={liveUrl} className="btn btn-sm btn-outline-primary me-2">Live URL</a>
-          {backendUrl && <a href={backendUrl} className="btn btn-sm btn-outline-secondary">Backend Repo</a>}
+          {backendUrl && <a href={backendUrl} className="btn btn-sm btn-outline-secondary">Github Repo</a>}
         </div>
         
         <div className="mb-3">
