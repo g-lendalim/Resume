@@ -10,7 +10,9 @@ function ProfessionalProfile() {
         Professional Profile
       </h4>
       <p className="lead">
-        Completed a 12-week intensive program with 25+ projects, covering HTML5, CSS3, JavaScript, React.js, Redux, Node.js, Express.js, SQL, Firebase, and Firestore. Gained hands-on experience in frontend and backend development, RESTful API integration, and CI/CD workflows.
+      Aspiring Junior Software Engineer with a background in healthcare and recent completion of a 12-week Full Stack Bootcamp at Sigma School. Built 25+ projects using React, Node.js, Firebase, and PostgreSQL, gaining hands-on experience in both frontend and backend development.
+      <br />
+      Throughout this journey, I've actively cultivated strong problem-solving skills, adaptability, and a user-first mindset, drawing from my healthcare background to build thoughtful, effective software. I bring empathy and attention to detail into every project and thrive in collaborative environments.
       </p>
     </section>
   );
