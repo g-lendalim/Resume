@@ -10,9 +10,10 @@ function ProfessionalProfile() {
         Professional Profile
       </h4>
       <p className="lead">
-      Aspiring Junior Software Engineer with a background in healthcare and recent completion of a 12-week Full Stack Bootcamp at Sigma School. Built 25+ projects using React, Node.js, Firebase, and PostgreSQL, gaining hands-on experience in both frontend and backend development.
+        Aspiring Junior Software Engineer with a healthcare background and a 12-week Full Stack Bootcamp from Sigma School. Built 25+ projects using React, Node.js, Firebase, and PostgreSQL, with a strong focus on problem-solving, user-first design, and collaborative development. Combines technical skills with empathy and attention to detail to create effective, thoughtful software.
+      {/* Aspiring Junior Software Engineer with a background in healthcare and recent completion of a 12-week Full Stack Bootcamp at Sigma School. Built 25+ projects using React, Node.js, Firebase, and PostgreSQL, gaining hands-on experience in both frontend and backend development.
       <br />
-      Throughout this journey, I've actively cultivated strong problem-solving skills, adaptability, and a user-first mindset, drawing from my healthcare background to build thoughtful, effective software. I bring empathy and attention to detail into every project and thrive in collaborative environments.
+      Throughout this journey, I've actively cultivated strong problem-solving skills, adaptability, and a user-first mindset, drawing from my healthcare background to build thoughtful, effective software. I bring empathy and attention to detail into every project and thrive in collaborative environments. */}
       </p>
     </section>
   );
@@ -104,7 +105,10 @@ function TechnicalSkills() {
       category: "DevOps & Tools",
       skills: ["Git/GitHub", "CI/CD Pipelines", "Vite", 
       "Vercel", 
-      "Chrome DevTools"]
+      "Chrome DevTools",
+      "VoiceFlow",
+      "Botpress"
+    ]
     }
   ];
 
@@ -160,7 +164,7 @@ function SoftSkills() {
   );
 }
 
-function Experience({ jobTitle, company, duration, responsibilities, techStack }) {
+function Experience({ jobTitle, company, duration, responsibilities }) {
   return (
     <Card className="mb-4 border-0 shadow-sm">
       <Card.Body>
@@ -186,9 +190,19 @@ function WorkExperience() {
     <section className="mt-5">
       <h4 className="fs-4 fw-bold border-bottom pb-2 mb-4 text-primary">Work Experience</h4>
       <Experience
+        jobTitle="Product and Outcomes Assistant"
+        company="Sigma School"
+        duration="June 2025 - Present"
+        responsibilities={[
+          "Led the Product & Outcomes team, revamping the bootcamp curriculum and launching a post-graduation module to enhance graduate skills and job readiness.",
+          "Co-developed an AI Coding Buddy to provide 24/7, delivering 24/7 curriculum-aware support while fostering independent problem-solving",
+          "Built a Talent Dashboard and collaborated with hiring partners to create hiring-ready project templates, securing feedback and endorsements"
+        ]}
+      />
+      <Experience
         jobTitle="Sales and Operations Assistant"
         company="FREYJA Enterprise"
-        duration="March 2023 - Present"
+        duration="March 2023 - June 2025"
         responsibilities={[
           "Spearheaded digital expansion into China by launching Xiao Hong Shu account",
           "Managed website migration to Shopify; ensured data integrity and UX consistency",
@@ -196,7 +210,7 @@ function WorkExperience() {
           "Streamlined inventory, logistics, and fulfillment processes using data-driven insights"
         ]}
       />
-      <Experience
+      {/* <Experience
         jobTitle="Freelance Ukulele Teacher"
         company="Ukubear Ukulele Education Institution"
         duration="December 2022 - December 2023"
@@ -204,7 +218,7 @@ function WorkExperience() {
           "Designed and delivered engaging, gamified lessons for kids aged 4–12",
           "Coordinated concert events, managed schedules, and ensured smooth communication with parents", 
         ]}
-      />
+      /> */}
       <Experience
         jobTitle="House Officer"
         company="Sarawak General Hospital"
@@ -219,7 +233,7 @@ function WorkExperience() {
   );
 }
 
-function Education({ degree, institution, duration, details, relevantCourses }) {
+function Education({ degree, institution, duration, details }) {
   return (
     <Card className="mb-4 border-0 shadow-sm">
       <Card.Body>
@@ -246,7 +260,7 @@ function EducationList() {
       <Education
         degree="Doctor of Medicine in General Medicine"
         institution="I.M. Sechenov First Moscow State Medical University"
-        duration="September 2014 - June 2022"
+        duration="September 2014 - June 2020"
         details="Graduated with Blue Diploma"
       />
     </section>
