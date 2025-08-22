@@ -26,7 +26,7 @@ function ProfileCard() {
         <div className="overflow-hidden rounded-circle mx-auto mb-3" style={{ width: '200px', height: '200px' }}>
           <Card.Img 
             variant="top" 
-            src="images/profile-picture.jpg" 
+            src="/public/profile-picture.jpg" 
             className="img-fluid" 
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
           />
