@@ -91,7 +91,7 @@ function TechnicalSkills() {
     },
     {
       category: "Database",
-      skills: ["PostgreSQL", "MongoDB", "Firebase/Firestore", "SQL"]
+      skills: ["PostgreSQL", "Firebase/Firestore", "SQL"]
     },
     {
       category: "SEO & Analytics",
