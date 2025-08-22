@@ -120,7 +120,7 @@ function TechnicalSkills() {
         {skillCategories.map((category, idx) => (
           <div key={idx} className="mb-3">
             <h6 className="text-light mb-2">{category.category}</h6>
-            <div className="d-flex flex-wrap gap-1 mb-2">
+            <div className="d-flex flex-wrap gap-2 mb-2">
               {category.skills.map((skill, index) => (
                 <Badge 
                   key={index} 
