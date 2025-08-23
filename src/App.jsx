@@ -94,6 +94,18 @@ function TechnicalSkills() {
       skills: ["PostgreSQL", "Firebase/Firestore", "SQL"]
     },
     {
+      category: "AI & LLM Integration",
+      skills: [
+        "OpenAI API", 
+        "Claude",
+        "ChatGPT", 
+        "Cursor",
+        "Github Copilot",
+        "Voiceflow",
+        "Botpress"
+      ]
+    },
+    {
       category: "SEO & Analytics",
       skills: [
         "SEO Optimization", 
@@ -106,9 +118,7 @@ function TechnicalSkills() {
       category: "DevOps & Tools",
       skills: ["Git/GitHub", "CI/CD Pipelines", "Vite", 
       "Vercel", 
-      "Chrome DevTools",
-      "VoiceFlow",
-      "Botpress"
+      "Chrome DevTools"
     ]
     }
   ];
@@ -268,14 +278,14 @@ function EducationList() {
   );
 }
 
-function TechProjects({ name, liveUrl, backendUrl, summary, features, technologies }) {
+function TechProjects({ name, liveUrl, githubRepo, summary, features, technologies }) {
   return (
     <Card className="mb-4 border-0 shadow-sm">
       <Card.Body>
         <Card.Title className="fs-5 fw-bold">{name}</Card.Title>
         <div className="mb-2">
           <a href={liveUrl} className="btn btn-sm btn-outline-primary me-2">Live URL</a>
-          {backendUrl && <a href={backendUrl} className="btn btn-sm btn-outline-secondary">Github Repo</a>}
+          {githubRepo && <a href={githubRepo} className="btn btn-sm btn-outline-secondary">Github Repo</a>}
         </div>
         
         <div className="mb-3">
@@ -326,7 +336,7 @@ function TechProjectsList() {
       <TechProjects
         name="Safe Space - Mental Health Web Application"
         liveUrl="https://capstone-project-vert-eight.vercel.app"
-        backendUrl="https://replit.com/@freyjaglenda/Capstone-Project-API"
+        githubRepo="https://github.com/g-lendalim/capstone-project"
         summary="Full-stack mental health platform leveraging healthcare domain expertise to deliver evidence-based digital interventions with personalized user experience."
         technologies={[
           "React", 
