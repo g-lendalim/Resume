@@ -11,7 +11,10 @@ function ProfessionalProfile() {
         Professional Profile
       </h4>
       <p className="lead">
-        Aspiring Junior Software Engineer with a healthcare background and a 12-week Full Stack Bootcamp from Sigma School. Built 25+ projects using React, Node.js, Firebase, and PostgreSQL, with a strong focus on problem-solving, user-first design, and collaborative development. Combines technical skills with empathy and attention to detail to create effective, thoughtful software.
+        Aspiring Junior Software Engineer with a background in healthcare, passionate about building meaningful, people-first digital solutions. After discovering the potential of technology beyond the hospital setting, I pursued a 12-week Full Stack Web Development Bootcamp at Sigma School, where I built 25+ projects using React, Node.js, Firebase, PostgreSQL and OpenAI API.
+        <br/>
+        <br/>
+        Currently at Sigma School as a Product and Outcomes Assistant, I collaborate across curriculum, product, and hiring initiatives to enhance student outcomes and industry alignment. Supporting the teaching team further reaffirmed my strongest passion for hands-on software development. I’m eager to bring my full-stack skills, empathy, and problem-solving mindset into a role where I can help build meaningful and scalable digital products.
       {/* Aspiring Junior Software Engineer with a background in healthcare and recent completion of a 12-week Full Stack Bootcamp at Sigma School. Built 25+ projects using React, Node.js, Firebase, and PostgreSQL, gaining hands-on experience in both frontend and backend development.
       <br />
       Throughout this journey, I've actively cultivated strong problem-solving skills, adaptability, and a user-first mindset, drawing from my healthcare background to build thoughtful, effective software. I bring empathy and attention to detail into every project and thrive in collaborative environments. */}
@@ -206,7 +209,7 @@ function WorkExperience() {
         duration="June 2025 - Present"
         responsibilities={[
           "Led the Product & Outcomes team, revamping the bootcamp curriculum and launching a post-graduation module to enhance graduate skills and job readiness.",
-          "Co-developed an AI Coding Buddy to provide 24/7, delivering 24/7 curriculum-aware support while fostering independent problem-solving",
+          "Co-developed an AI Coding Buddy to provide 24/7 curriculum-aware support while fostering independent problem-solving",
           "Built a Talent Dashboard and collaborated with hiring partners to create hiring-ready project templates, securing feedback and endorsements"
         ]}
       />
