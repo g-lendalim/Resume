@@ -14,9 +14,7 @@ function ProfessionalProfile() {
         Freelance Full-Stack Software Developer building production-ready web
         and mobile applications with Laravel, MySQL, React (TypeScript), and
         React Native (iOS & Android). Currently developing event management and mobile booking platforms, as well as QR-based solutions for attendance tracking and product claims. Experienced in integrating AI-powered tools to enhance
-        student engagement and outcomes in startup environments. Combines strong
-        product thinking and system design awareness with a healthcare
-        background to user-centered problem solving.
+        student engagement and outcomes in startup environments. With strong product thinking and system design awareness, and a healthcare background, I focus on creating solutions that are reliable, user-friendly, and impact-driven.
       </p>
     </section>
   );
