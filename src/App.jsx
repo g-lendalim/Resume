@@ -10,12 +10,10 @@ function ProfessionalProfile() {
       <h4 className="fs-4 fw-bold border-bottom pb-2 mb-3 text-primary">
         Professional Profile
       </h4>
-      <p className="lead">
+      <p className="lead">    
         Freelance Full-Stack Software Developer building production-ready web
         and mobile applications with Laravel, MySQL, React (TypeScript), and
-        React Native (iOS & Android). Focused on event management and booking
-        platforms, including QR-based solutions for attendance tracking and
-        product claims. Experienced in integrating AI-powered tools to enhance
+        React Native (iOS & Android). Currently developing event management and mobile booking platforms, as well as QR-based solutions for attendance tracking and product claims. Experienced in integrating AI-powered tools to enhance
         student engagement and outcomes in startup environments. Combines strong
         product thinking and system design awareness with a healthcare
         background to user-centered problem solving.
@@ -223,9 +221,10 @@ function WorkExperience() {
       <Experience
         jobTitle="Product and Outcomes Assistant"
         company="Sigma School"
-        duration="June 2025 - Present"
+        duration="June 2025 - October 2025"
         responsibilities={[
-          "Led the Product & Outcomes team, revamping the bootcamp curriculum and launching a post-graduation module to enhance graduate skills and job readiness.",
+          "Led the Product & Outcomes team, revamping the bootcamp curriculum and launching a post-graduation module to enhance graduate skills and job readiness",
+          "Spearheaded the development of a Learning Management System (LMS) to streamline course delivery, track student progress, and centralize learning resources",
           "Co-developed an AI Coding Buddy to provide 24/7 curriculum-aware support while fostering independent problem-solving",
           "Built a Talent Dashboard and collaborated with hiring partners to create hiring-ready project templates, securing feedback and endorsements"
         ]}
