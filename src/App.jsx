@@ -11,13 +11,14 @@ function ProfessionalProfile() {
         Professional Profile
       </h4>
       <p className="lead">
-        Aspiring Junior Software Engineer with a background in healthcare, passionate about building meaningful, people-first digital solutions. After discovering the potential of technology beyond the hospital setting, I pursued a 12-week Full Stack Web Development Bootcamp at Sigma School, where I built 25+ projects using React, Node.js, Firebase, PostgreSQL and OpenAI API.
-        <br/>
-        <br/>
-        Currently at Sigma School as a Product and Outcomes Assistant, I collaborate across curriculum, product, and hiring initiatives to enhance student outcomes and industry alignment. Supporting the teaching team further reaffirmed my strongest passion for hands-on software development. I’m eager to bring my full-stack skills, empathy, and problem-solving mindset into a role where I can help build meaningful and scalable digital products.
-      {/* Aspiring Junior Software Engineer with a background in healthcare and recent completion of a 12-week Full Stack Bootcamp at Sigma School. Built 25+ projects using React, Node.js, Firebase, and PostgreSQL, gaining hands-on experience in both frontend and backend development.
-      <br />
-      Throughout this journey, I've actively cultivated strong problem-solving skills, adaptability, and a user-first mindset, drawing from my healthcare background to build thoughtful, effective software. I bring empathy and attention to detail into every project and thrive in collaborative environments. */}
+        Freelance Full-Stack Software Developer building production-ready web
+        and mobile applications with Laravel, MySQL, React (TypeScript), and
+        React Native (iOS & Android). Focused on event management and booking
+        platforms, including QR-based solutions for attendance tracking and
+        product claims. Experienced in integrating AI-powered tools to enhance
+        student engagement and outcomes in startup environments. Combines strong
+        product thinking and system design awareness with a healthcare
+        background to user-centered problem solving.
       </p>
     </section>
   );
@@ -85,16 +86,32 @@ function TechnicalSkills() {
   const skillCategories = [
     {
       category: "Frontend Development",
-      skills: ["React.js", "HTML5/CSS3", "Bootstrap", "JavaScript (ES6+)", "Responsive Design", "React Helmet", 
-      "Semantic HTML"]
+      skills: ['React.js',
+      'React Native',
+      'shadcn/ui',
+      'Tailwind CSS',
+      'HTML5/CSS3',
+      'JavaScript (ES6+)',
+      'Bootstrap',
+      'Responsive Design',
+      'Semantic HTML',
+      'React Helmet']
     },
     {
       category: "Backend Development",
-      skills: ["Node.js", "Express.js", "REST APIs"]
+      skills: ["PHP",
+      "Laravel",
+      "Node.js",
+      "Express.js",
+      "REST APIs"]
     },
     {
-      category: "Database",
-      skills: ["PostgreSQL", "Firebase/Firestore", "SQL"]
+      category: "Database & CMS",
+      skills: ["MySQL",
+      "PostgreSQL",
+      "Firebase/Firestore",
+      "SQL",
+      "Contentful"]
     },
     {
       category: "AI & LLM Integration",
