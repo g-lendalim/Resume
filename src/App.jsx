@@ -11,10 +11,7 @@ function ProfessionalProfile() {
         Professional Profile
       </h4>
       <p className="lead">    
-        Freelance Full-Stack Software Developer building production-ready web
-        and mobile applications with Laravel, MySQL, React (TypeScript), and
-        React Native (iOS & Android). Currently developing event management and mobile booking platforms, as well as QR-based solutions for attendance tracking and product claims. Experienced in integrating AI-powered tools to enhance
-        student engagement and outcomes in startup environments. With strong product thinking and system design awareness, and a healthcare background, I focus on creating solutions that are reliable, user-friendly, and impact-driven.
+        Full-Stack Software Developer with experience building business applications, automation workflows, and AI-powered solutions. With a foundation in healthcare and an appreciation for thoughtful system architecture, I strive to develop reliable, scalable, and user-friendly systems that balance technical excellence with practical impact.
       </p>
     </section>
   );
@@ -82,60 +79,83 @@ function TechnicalSkills() {
   const skillCategories = [
     {
       category: "Frontend Development",
-      skills: ['React.js',
-      'React Native',
-      'shadcn/ui',
-      'Tailwind CSS',
-      'HTML5/CSS3',
-      'JavaScript (ES6+)',
-      'Bootstrap',
-      'Responsive Design',
-      'Semantic HTML',
-      'React Helmet']
+      skills: [
+        "React.js",
+        "Next.js",
+        "React Native",
+        "Flutter",
+        "TypeScript",
+        "JavaScript (ES6+)",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "HTML5/CSS3"
+      ]
     },
     {
       category: "Backend Development",
-      skills: ["PHP",
-      "Laravel",
-      "Node.js",
-      "Express.js",
-      "REST APIs"]
-    },
-    {
-      category: "Database & CMS",
-      skills: ["MySQL",
-      "PostgreSQL",
-      "Firebase/Firestore",
-      "SQL",
-      "Contentful"]
-    },
-    {
-      category: "AI & LLM Integration",
       skills: [
-        "OpenAI API", 
-        "Claude",
-        "ChatGPT", 
-        "Cursor",
-        "Github Copilot",
+        "PHP",
+        "Laravel",
+        "Node.js",
+        "Express.js",
+        "REST API",
+        "API Integration"
+      ]
+    },
+    {
+      category: "Database & Backend Services",
+      skills: [
+        "MySQL",
+        "PostgreSQL",
+        "Supabase",
+        "Firebase/Firestore",
+        "SQL",
+        "Contentful"
+      ]
+    },
+    {
+      category: "AI & LLM Development",
+      skills: [
+        "OpenAI API",
+        "Anthropic Claude API",
+        "AI Chatbot Development",
+        "Prompt Engineering",
         "Voiceflow",
         "Botpress"
       ]
     },
     {
-      category: "SEO & Analytics",
+      category: "Automation & Integrations",
       skills: [
-        "SEO Optimization", 
-        "Structured Data (JSON-LD)", 
-        "Google Search Console", 
-        "Google Analytics"
+        "Playwright",
+        "WhatsApp Automation",
+        "Google Sheets Automation",
+        "Workflow Automation",
+        "Third-Party API Integrations"
       ]
     },
     {
-      category: "DevOps & Tools",
-      skills: ["Git/GitHub", "CI/CD Pipelines", "Vite", 
-      "Vercel", 
-      "Chrome DevTools"
-    ]
+      category: "Development Tools & Platforms",
+      skills: [
+        "Git/GitHub",
+        "Lovable",
+        "Claude Code",
+        "GitHub Copilot",
+        "Cursor",
+        "Vite",
+        "Vercel",
+        "CI/CD Pipelines",
+        "Chrome DevTools"
+      ]
+    },
+    {
+      category: "SEO & Web Analytics",
+      skills: [
+        "Technical SEO",
+        "Structured Data (JSON-LD)",
+        "Google Search Console",
+        "Google Analytics"
+      ]
     }
   ];
 
@@ -217,6 +237,31 @@ function WorkExperience() {
     <section className="mt-5">
       <h4 className="fs-4 fw-bold border-bottom pb-2 mb-4 text-primary">Work Experience</h4>
       <Experience
+        jobTitle="Software Developer"
+        company="Onecare Wellness"
+        duration="Mar 2026 – Present"
+        responsibilities={[
+          "Develop and maintain internal POS and administrative systems supporting sales, commissions, inventory, customer follow-up, refunds, and retail operations",
+          "Developed a Sales & Commission Management system with configurable commission settings, enabling retail staff to track sales performance and streamlining commission administration",
+          "Took ownership of the inventory management system, enhancing end-to-end stock operations across companies and multiple kiosks, covering stock requests, purchase orders (PO), delivery orders (DO), goods receiving notes (GRN), stock transfers, invoicing, and stock quarantine workflows",
+          "Manage and enhance the e-commerce and POS promotion system, implementing SQL-driven promotional logic supporting amount-based, voucher-triggered, and product-based promotions, including automated free-gift allocation and promotion eligibility rules",
+          "Developed Google Sheets and WhatsApp automation workflows to streamline KOL and marketing operations, reducing repetitive administrative tasks and improving workflow efficiency",
+          "Contribute to an AI-powered Wellness Club application, developing features including an AI Wellness Quiz, conversational AI chatbot, and Daily Rituals to support personalised user engagement",
+          "Develop a Flutter-based Attendance & Leave Management mini-app integrated into the company's main application, supporting employee attendance tracking and leave management workflows"
+        ]}
+      />
+      <Experience
+        jobTitle="Freelance Full-Stack Software Developer"
+        company="Collinz Education Group"
+        duration="April 2026 – July 2026"
+        responsibilities={[
+          "Developed a multi-role KPI and Staff Appraisal Management System using Lovable and Supabase to centralise staff performance management and evaluation",
+          "Implemented role-based access control (RBAC) for six user groups (Admin, Director, HR, Head of Department, Coordinator, and Teacher) with permissions and workflows tailored to their respective responsibilities",
+          "Developed modules for user, task, KPI, appraisal, and form management, supporting monthly and termly performance assessments and staff evaluation",
+          "Translated stakeholder requirements into application features, designing and refining workflows to support the organisation's performance management processes."
+        ]}
+      />
+      <Experience
         jobTitle="Product and Outcomes Assistant"
         company="Sigma School"
         duration="June 2025 - October 2025"
@@ -227,7 +272,7 @@ function WorkExperience() {
           "Built a Talent Dashboard and collaborated with hiring partners to create hiring-ready project templates, securing feedback and endorsements"
         ]}
       />
-      <Experience
+      {/* <Experience
         jobTitle="Sales and Operations Assistant"
         company="FREYJA Enterprise"
         duration="March 2023 - June 2025"
@@ -237,7 +282,7 @@ function WorkExperience() {
           "Boosted e-commerce sales by 30% via strategic content, live showcases, and analytics",
           "Streamlined inventory, logistics, and fulfillment processes using data-driven insights"
         ]}
-      />
+      /> */}
       {/* <Experience
         jobTitle="Freelance Ukulele Teacher"
         company="Ukubear Ukulele Education Institution"
@@ -247,7 +292,7 @@ function WorkExperience() {
           "Coordinated concert events, managed schedules, and ensured smooth communication with parents", 
         ]}
       /> */}
-      <Experience
+      {/* <Experience
         jobTitle="House Officer"
         company="Sarawak General Hospital"
         duration="July 2021 - June 2022"
@@ -256,7 +301,7 @@ function WorkExperience() {
           "Mentored junior staff and improved efficiency in clinical documentation",
           "Performed minor procedures and ensured adherence to safety protocols"
         ]}
-      />
+      /> */}
     </section>
   );
 }
